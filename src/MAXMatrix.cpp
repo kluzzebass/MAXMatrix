@@ -134,11 +134,4 @@ void MAXMatrix::paint(uint8_t *data) {
 		}
 		transfer();
 	}
-
-	// This is a bit daft. Perhaps slowing down the SPI speed is a better solution.
-	// shotgun(REG_INTENSITY, mIntensity);
-	// shotgun(REG_SCANLIMIT, mScanLimit);
-	// shotgun(REG_DECODEMODE, 0);
-	// shotgun(REG_DISPLAYTEST, 0);
-	// shotgun(REG_SHUTDOWN, !mShutdown);
 }
