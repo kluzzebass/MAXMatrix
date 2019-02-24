@@ -7,7 +7,7 @@ my own library. At this point, it's only been tested on ESP8266 boards.
 ## A word of warning ##
 
 This library does not mollycoddle you. If you're looking for a library that has fonts, scroll
-texts, generic graphics functions, etc., this is not is. It does one thing; it transfers an
+texts, generic graphics functions, etc., this is not it. It does one thing; it transfers an
 array of bytes to set daisy chained displays efficiently. How you manipulate that byte array
 to display what you need is entirely up to you.
 
@@ -19,9 +19,9 @@ shifted in, the previous ones are shifted out the other end, so that if you have
 packets get shifted down the line until you're ready to latch everything into place.
 
 The display driver can handle up to eight 8-bit segments (dots on a matrix or digits on a number display), but
-you can only set one segment at a time per display driver. Although this doesn't mean that you need to update
-the same segment on all display drivers; you could conceivably update segment 1 on the first display driver, segment 2
-on the second display driver, and so on. In reality, though, you'll be updating the same segment on all the
+you can only set one segment at a time per display driver. This doesn't mean that you need to update
+the same segment on all display drivers, though; you could conceivably update segment 1 on the first display driver,
+segment 2 on the second display driver, and so on. In reality, though, you'll be updating the same segment on all the
 display drivers down the line.
 
 So, to do a complete repaint of a 4 display driver matrix (8x8x4 pixels), you'll do something like this:
